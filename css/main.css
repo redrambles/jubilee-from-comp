@@ -1,0 +1,307 @@
+/* General or combined styles*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.full-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+nav ul li,
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#about, #work, #contact {
+  padding: 3em 0;
+}
+/* Header */
+
+header {
+  background-image: url("../img/full-background.png");
+  background-size: cover;
+}
+
+.top-header {
+  padding: 2.5em 1.5em;
+  overflow: auto;
+}
+
+.top-header h2 {
+  color: #bbc085;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+}
+
+nav {
+  font-family: 'Source Sans Pro', sans-serif;
+  /* padding-top: 2em; */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #9a9b9b;
+  display: block;
+  padding-right: 1em;
+}
+
+.main-title {
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  margin-top: 5%;
+  color: #9a9b9b;
+  padding: 1em;
+}
+
+.main-title .hi {
+  color: #262a2b;
+}
+/* About */
+
+#about {
+  background-color: #ffffff;
+}
+
+#about .full-width {
+  padding: 1.5em;
+}
+
+#about h2 {
+  font-family: 'Lora', serif;
+  font-size: 36px
+}
+
+#about p {
+  font-family: 'Source Sans Pro', sans-serif; 
+  color: #a1a1a1;
+  line-height: 1.8;
+  font-size: 18px;
+}
+/* Work */
+
+#work {
+  background-color: #f9ceb7;
+}
+
+#work {
+  font-family: 'Lora', serif;  
+}
+
+#work h3{
+  font-family: 'Source Sans Pro', sans-serif;  
+  font-size: 24px;
+}
+
+.third-width {
+  padding: 1em;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.third-width img {
+  display: block;
+  margin: 0 auto;
+}
+
+.third-width p {
+  padding: 0 1.25em;
+  font-size: 18px;
+}
+
+/* Contact */
+
+#contact {
+  background-color: #ebebeb;
+  padding: 1em;
+}
+.contact-image,
+.email-contact {
+  margin: 0 auto;
+}
+
+.contact-image {
+  border: 17px solid #ffffff;
+  display: block;
+}
+
+.email-contact {
+  font-family: 'Lora', serif; 
+  width: 85%;
+  padding-top: 1em;
+}
+
+.email-contact .email-contact-info,
+.email-contact .social {
+  font-family: 'Source Sans Pro', sans-serif;    
+}
+.email-contact h2 {
+  font-size: 24px;
+  margin: 0.3em 0;
+}
+
+.email-contact p {
+  font-size: 18px;
+  margin: 0.3em 0;
+}
+.email-contact-info img {
+  float: left;
+  display: block;
+  margin-right: 0.5em;
+  padding-top: 0.2em;
+}
+
+.email-contact-info p {
+  color: #c49075;
+  font-weight: bold
+}
+
+.social p {
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 1em;
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 0.25em;
+  margin-right: 1em;
+}
+
+
+
+/* media queries */
+
+
+@media screen and (min-width: 700px){
+  header {
+    height: 800px;
+  }
+
+  .top-header h2 {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    padding-top: 2em;
+  }
+
+  nav ul li a {
+    padding: 0 2em;
+    font-size: 18px;
+  }
+
+  #about, #work, #contact {
+    padding: 6em 0;
+  }
+
+  #about p {
+    padding-right: 10%;
+  }
+
+  #about h2 {
+    font-size: 36px;
+  }
+  
+  #about p {
+    line-height: 2.1;
+    font-size: 21px;
+  }
+
+  .half-width {
+    width: 50%;
+    float: left;
+  }
+
+  .third-width {
+    width: 33%;
+    float: left;
+    padding: 2em;
+  }
+
+  .contact-image {
+    margin: 0;
+  }
+
+  .email-contact {
+    padding-left: 10%;   
+    padding-top: 0;
+  }
+
+
+}
+
+@media screen and (min-width: 1100px){
+
+  .main-title {
+    padding: 0;
+    margin-top: 80px;
+    width: 85%;
+    font-size: 72px;
+  }
+
+  .email-contact h2 {
+    font-size: 36px;
+    margin: 0.3em 0;
+  }
+  
+  .email-contact p {
+    font-size: 32px;
+    margin: 0.3em 0;
+    width: 100%;
+
+  }
+  .email-contact-info img {
+    float: left;
+    display: block;
+    margin-right: 1em;
+    padding-top: 0.5em;
+  }
+  
+  .email-contact-info p {
+    color: #c49075;
+    font-weight: bold
+  }
+  
+  .social p {
+    font-size: 29px;
+    font-weight: bold;
+    padding-top: 2em;
+    font-family: 'Source Sans Pro', sans-serif; 
+  }
+  
+  .social-icon {
+    display: inline-block;
+    padding: 0.5em;
+    margin-right: 2em;
+  }
+}

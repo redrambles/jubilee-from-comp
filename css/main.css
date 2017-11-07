@@ -33,7 +33,7 @@ nav ul li,
 }
 
 #about, #work, #contact {
-  padding: 3em 0;
+  padding: 2em 0;
 }
 
 /*** Header ***/
@@ -145,12 +145,8 @@ nav ul li a {
 
 #contact {
   background-color: #ebebeb;
-  padding: 1em;
-}
-
-.contact-image,
-.email-contact {
-  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .contact-image {
@@ -174,7 +170,9 @@ nav ul li a {
   margin: 0.3em 0;
 }
 
-.email-contact p {
+.email-contact h3 {
+  font-weight: normal;
+  letter-spacing: -1px;
   font-size: 18px;
   margin: 0.3em 0;
 }
@@ -186,9 +184,10 @@ nav ul li a {
   padding-top: 0.2em;
 }
 
-.email-contact-info p {
+.email-contact-info a {
+  text-decoration: none;
   color: #c49075;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .social p {
@@ -227,6 +226,12 @@ nav ul li a {
     font-size: 18px;
   }
 
+  .main-title {
+    padding: 1em;
+    margin-top: 60px;
+    font-size: 60px;
+  }
+
   #about, #work, #contact {
     padding: 6em 0;
   }
@@ -255,6 +260,11 @@ nav ul li a {
     padding: 2em;
   }
 
+  .contact-image,
+  .email-contact {
+    margin: 0 auto;
+  }
+  
   .contact-image {
     margin: 0;
   }
@@ -269,7 +279,6 @@ nav ul li a {
 @media screen and (min-width: 1100px){
 
   .main-title {
-    padding: 0;
     margin-top: 80px;
     width: 85%;
     font-size: 72px;
@@ -280,7 +289,7 @@ nav ul li a {
     margin: 0.3em 0;
   }
   
-  .email-contact p {
+  .email-contact h3 {
     font-size: 32px;
     margin: 0.3em 0;
     width: 100%;
@@ -293,9 +302,10 @@ nav ul li a {
     padding-top: 0.5em;
   }
   
-  .email-contact-info p {
+  .email-contact-info a {
     color: #c49075;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 28px;
   }
   
   .social p {
@@ -310,5 +320,5 @@ nav ul li a {
     padding: 0.5em;
     margin-right: 2em;
   }
-  
+
 }

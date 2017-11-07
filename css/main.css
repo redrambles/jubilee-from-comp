@@ -120,6 +120,7 @@ nav ul li a:hover {
 
 #work {
   background-color: #f9ceb7;
+  font-size: 1.2rem;
 }
 
 #work {
@@ -128,7 +129,7 @@ nav ul li a:hover {
 
 #work h3{
   font-family: 'Source Sans Pro', sans-serif;  
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .third-width {
@@ -144,7 +145,7 @@ nav ul li a:hover {
 
 .third-width p {
   padding: 0 1.25em;
-  font-size: 18px;
+  font-size: 1rem
 }
 
 /*** Contact ***/
@@ -218,11 +219,12 @@ nav ul li a:hover {
   text-decoration: none;
   cursor: pointer;
   color: #c49075;
+  border-radius: 50%;
   font-weight: bold;
+  transition: ease-in, background-color, color, 200ms;
 }
 .back-to-top a:hover {
   background-color: #c49075;
-  border-radius: 50%;
   color: white;
 }
 /*** Media Queries ***/
@@ -286,6 +288,15 @@ nav ul li a:hover {
     padding: 2em;
   }
 
+  .third-width p {
+    padding: 0 1.25em;
+    font-size: 1.125rem;
+  }
+
+  #work h3{
+    font-size: 1.5rem;
+  }
+  
   .contact-image,
   .email-contact {
     margin: 0 auto;

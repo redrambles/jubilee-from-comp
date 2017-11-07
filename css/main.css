@@ -138,6 +138,10 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
+.third-width figure {
+  transform: scale(0.8);
+}  
+
 .third-width img {
   display: block;
   margin: 0 auto;
@@ -292,6 +296,10 @@ nav ul li a:hover {
     padding: 0 1.25em;
     font-size: 1.125rem;
   }
+
+  .third-width figure {
+    transform: scale(1);
+  }  
 
   #work h3{
     font-size: 1.5rem;
